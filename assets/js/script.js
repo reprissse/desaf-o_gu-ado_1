@@ -42,7 +42,7 @@ Se debe considerar lo siguiente:
 ● 1 año tiene 365 días 
 ● 1 semana tiene 7 días 
 Se recomienda usar la función Math.floor para obtener la parte entera de un número 
-decimal.*/
+decimal.
 
 //se definen las constantes/
 const año = 365
@@ -55,5 +55,27 @@ let semanaRedondeado = (añoRedondeado % dias)
 let diasrestantes = dias - (añoRedondeado * año) - (semanaRedondeado * semanas)
 //se genera el texto a visualizar/
 document.write(`${dias} son ${añoRedondeado} año, ${semanaRedondeado} semanas y ${diasrestantes} días`)
+FINALIZA EJERCICIO NÚMERO 4*/
+
+
+/*EJERCICIO NÚMERO 5
+Crear un programa que solicite al usuario 5 números y realice los cálculos que se piden 
+a continuación. (2 Puntos) 
+● La suma de todos los números. 
+● El promedio de los 5 números ingresados. */
+
+//se solicitan los 5 numeros al usuario/
+let number1 = +prompt('ingresa un numero')
+let number2 = +prompt('ingresa un numero')
+let number3 = +prompt('ingresa un numero')
+let number4 = +prompt('ingresa un numero')
+let number5 = +prompt('ingresa un numero')
+
+// se define la formula para sumar los 5 numeros/
+let suma = (number1 + number2 + number3 + number4 + number5)
+// se define la formula para promediar los 5 numeros/
+let promedio = (suma / 5)
+// se define el texto que visualiza el usuario con ambos resultado
+document.write(`la suma total de los 5 numeros ingresados es ${suma} y el promedio los 5 numeros ingresados es ${promedio}`)
 
 
